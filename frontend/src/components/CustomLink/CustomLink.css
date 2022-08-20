@@ -1,0 +1,13 @@
+.active__style {
+    color: var(--primary-color);
+    background:rgba(66, 194, 255, 0.3);
+    border-radius: var(--main__default-border-radius);
+
+}
+
+
+
+.not__active__style {
+    color: var(--inactive-color);
+    background: #fff
+}

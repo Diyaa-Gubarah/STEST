@@ -1,0 +1,51 @@
+.navbar {
+  display: flex;
+  background-color: #fff;
+  padding: 8px;
+
+}
+
+.navbar_container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  flex: 1;
+}
+
+.navbar__left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.navbar__left img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.navbar__input {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1;
+  border: none;
+  border-radius: 4px;
+  background-color: #f5f5f5;
+  padding: 4px 8px;
+  gap: 4px;
+  color: #748DA6;
+
+}
+
+.navbar__input input {
+  flex: 1;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background-color: #f5f5f5;
+  padding: 8px;
+  color: #748DA6;
+text-align: center;
+}

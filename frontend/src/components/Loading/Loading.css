@@ -1,0 +1,9 @@
+.loading {
+    border-radius: var(--main__default-border-radius);
+   padding: var(--main__default-padding);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    font-style: italic;
+}

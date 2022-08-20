@@ -1,0 +1,15 @@
+.footer {
+  background-color: rgb(229, 229, 229);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__content {
+  text-align: center;
+}
+
+.footer__content p {
+  color: #748DA6;
+}
