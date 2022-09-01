@@ -16,7 +16,6 @@ export function Home(props) {
 
     dispatch(initializeCustomer());
   }, []);
-  
 
   return (
     <div className="wrapper">
