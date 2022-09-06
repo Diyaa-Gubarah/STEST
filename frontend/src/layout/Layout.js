@@ -8,12 +8,8 @@ import { initializeUser } from "../store/slice/userSlice";
 import { useEffect } from "react";
 
 function App({ children }) {
-  const dispatch = useAppDispatch();
   const user = useAppShallowSelector((state) => state.user.user);
 
-  useEffect(() => {
-    dispatch(initializeUser());
-  }, []);
 
   return user ? (
     <Home>{children}</Home>
@@ -27,6 +23,11 @@ function App({ children }) {
 }
 
 const Layout = ({ children }) => {
+  const dispatch = useAppDispatch();
+
+  useEffect(() => {
+    dispatch(initializeUser());
+  }, []);
   return <App children={children} />;
 };
 

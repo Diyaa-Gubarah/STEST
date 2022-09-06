@@ -12,8 +12,6 @@ export function Home(props) {
   const dispatch = useAppDispatch();
 
   useEffect(() => {
-    dispatch(initializeUser());
-
     dispatch(initializeCustomer());
   }, []);
 
