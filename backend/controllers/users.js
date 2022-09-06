@@ -46,7 +46,6 @@ usersRouter.get("/", async (request, response, next) => {
       name: 1,
       number: 1,
       role: 1,
-      
     })
     response.json(users);
   } catch (error) {
