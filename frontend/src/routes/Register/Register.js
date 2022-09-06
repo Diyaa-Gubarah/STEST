@@ -9,7 +9,6 @@ const Register = () => {
   const dispatch = useAppDispatch();
   const navigate = useNavigate();
 
-
   const isLoading = useAppShallowSelector((state) => state.user.isLoading);
   const message = useAppShallowSelector((state) => state.user.message);
   const success = useAppShallowSelector((state) => state.user.success);
@@ -38,7 +37,7 @@ const Register = () => {
 
   useEffect(() => {
     if (success) {
-      navigate("/login", { replace: true, });
+      navigate("/login", { replace: true });
       dispatch(
         setMessage({
           message: "",
