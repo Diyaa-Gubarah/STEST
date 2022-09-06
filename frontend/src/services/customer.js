@@ -6,7 +6,6 @@ const CUSTOMER_URL = `${BASE_URL}/customers`;
 const CUSTOMER_URL_ID = `${BASE_URL}/customers/:id`;
 
 
-console.log(`customer service configHeader(): ${JSON.stringify(configHeader())}`);
 
 export const getCustomers = async () => {
   const response = await axios.get(CUSTOMER_URL, configHeader());

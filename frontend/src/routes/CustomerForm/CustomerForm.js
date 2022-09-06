@@ -26,7 +26,6 @@ const CustomerForm = () => {
     id: customer?.id || "",
   });
 
-  console.log(`data: ${JSON.stringify(data)}`);
 
   const onTextChange = useCallback(
     (event) => {
