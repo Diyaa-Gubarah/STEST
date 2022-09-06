@@ -60,7 +60,7 @@ export const initializeUser = () => {
       success: false,
     });
     try {
-      const user = (await getFromLocalStorage("user")) || null;
+      const user = getFromLocalStorage("user")
       dispatch(setUser(user));
     } catch (error) {
       dispatch(
@@ -90,7 +90,7 @@ export const loginAUser = (user) => {
       const response = await userServices.login(user);
       await removeFromLocalStorage("user");
       await setToLocalStorage("user", response);
-      dispatch(setUser(JSON.stringify(response)));
+      dispatch(setUser(response));
     } catch (error) {
       dispatch(
         setMessage({

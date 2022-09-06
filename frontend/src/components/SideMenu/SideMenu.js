@@ -26,9 +26,9 @@ function SideMenu() {
     <div className="sideMenu">
       <div className="navigation">
         <ul>
-          {user.name && (
+          {user && (
             <div className="navigation-img">
-              <small>{user.name[0].toUpperCase()}</small>
+              <small>{user?.name[0].toUpperCase()}</small>
             </div>
           )}
           <CustomLink to="/">

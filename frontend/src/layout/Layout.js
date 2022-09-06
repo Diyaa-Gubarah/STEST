@@ -10,7 +10,6 @@ import { useEffect } from "react";
 function App({ children }) {
   const user = useAppShallowSelector((state) => state.user.user);
 
-
   return user ? (
     <Home>{children}</Home>
   ) : (
@@ -28,7 +27,8 @@ const Layout = ({ children }) => {
   useEffect(() => {
     dispatch(initializeUser());
   }, []);
-  return <App children={children} />;
+
+  return <App>{children}</App>;
 };
 
 export default Layout;
